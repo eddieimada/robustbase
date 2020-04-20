@@ -21,7 +21,7 @@
 ### along with this program; if not, a copy is available at
 ### http://www.r-project.org/Licenses/
 
-
+###test
 ltsReg <- function(x, ...) UseMethod("ltsReg")
 
 ltsReg.formula <- function(formula, data, subset, weights, na.action,
