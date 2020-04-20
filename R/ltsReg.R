@@ -376,7 +376,7 @@ ltsReg.default <- function (x, y, intercept = TRUE,
 		stop(gettextf("NA coefficient (at %s) from \"best\" subset",
 			      paste(which(ic), collapse =",")))
 	    ans$best <- sort(z$inbest)
-	    fitted <- x %*% cf
+	    fitted <- x %*% t(cf)
 	    resid <- (fitted-y)/sqrt(cf^2+1) 
 	    piv <- 1:p
 	    coefs[piv] <- cf ## FIXME? why construct 'coefs' so complicatedly?	use 'cf' !
