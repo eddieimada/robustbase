@@ -22,7 +22,7 @@
 ### http://www.r-project.org/Licenses/
 
 
-ltsReg_v1 <- function(x, ...) UseMethod("ltsReg")
+ltsReg <- function(x, ...) UseMethod("ltsReg")
 
 ltsReg.formula <- function(formula, data, subset, weights, na.action,
 			   model = TRUE, x.ret = FALSE, y.ret = FALSE,
